@@ -8,10 +8,9 @@ import java.util.List;
 
 public class SumOfDrawTest {
 
-    SumOfDraw underTest = new SumOfDraw();
-
     @Test
     public void testSumOfDraw() {
+        SumOfDraw underTest = new SumOfDraw();
         int result = underTest.getMostCommonDrawSum(getMockArchive());
         Assertions.assertEquals(result, 33);
     }

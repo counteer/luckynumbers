@@ -18,8 +18,6 @@ public class FileHandler {
     @Value("${stat.file.name}")
     private String statFileName;
 
-
-
     List<int[]> readArchive(int limit) {
         try (InputStream in = this.getClass()
                 .getClassLoader().getResourceAsStream(statFileName);
